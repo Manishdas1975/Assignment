@@ -1,0 +1,44 @@
+<!--page for showing the teams stats of each and every team on this single
+page itself instead of showing different pages for different teams-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/main.js" defer></script>
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Team</title>
+</head>
+<body>
+    <header id="header">
+        <section class="top" >
+            <!-- <form action="" class="search">
+                <input type="text" placeholder="Enter team name" id="team-search">
+            <input type="text" placeholder="Enter player name" id="player-search">
+            <button>Search</button>
+            </form> -->
+            <button id="add" onclick="show()" >Add</button>
+            <form action="" id="addNew" display="none">
+                <input id="userplayern" type="text" placeholder="Enter new player name" >
+                <input id="playerteam" type="text" placeholder="Enter team" >
+                <input id="playerpr" type="text" placeholder="Enter player price" >
+                <input id="desc" type="text" placeholder="Enter player role" >
+                <button type="button" value="Submit" onclick="store()">Submit</button>
+            </form>
+
+        </section >
+    </header>
+    <div class="team-detail"  onload="teamURL()" >
+        <div id="icon"></div>
+        <div class="team-stats">
+            <!-- <h1 id="name"></h1>
+            <h2 id="player-count"></h2>
+            <h2 id="top-bat"></h2>
+            <h2 id="top-bowl"></h2>
+            <h2 id="champion"></h2> -->
+        </div>
+        <div class="player-grid"></div>
+    </div>
+</body  >
+</html>

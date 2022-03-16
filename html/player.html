@@ -1,0 +1,23 @@
+<!--For showing the player details of each player on this page instead of
+showing it on separate pages. May have to fetch data in some format and
+use it to show here dynamically-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{Player_Name}</title>
+</head>
+<body>
+    <div class="stats">
+        <h1 class="full-name">{Name}</h1>
+        <div id="playerImg"><img src={photo.id} alt="Player photo"></div>
+        <h2 class="team">{Team}</h2>
+        <h2 class="price">{Price}</h2>
+        <h3 class="playing-status">{playing.status}</h3>
+        <h3 class="role">{Role}</h3>
+    </div>
+    
+</body>
+</html>

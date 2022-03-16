@@ -1,0 +1,35 @@
+* {
+  background-color: rgb(224, 211, 237);
+  border: 1px solid red;
+  padding: 0;
+}
+
+#main {
+  padding: 0;
+  max-width: 100%;
+  border: 2px solid black;
+}
+top {
+  display: inline-flex;
+  justify-content: space-between;
+}
+::placeholder {
+  color: black;
+}
+
+.team-grid {
+  background-color: rgb(164, 174, 174);
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.team-grid > div {
+  border-radius: 5px;
+  min-width: none;
+  min-height: 2rem;
+  background-color: rgb(238, 227, 227);
+}

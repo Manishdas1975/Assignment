@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>IpL</title>
+    <script src="../scripts/main.js" defer></script>
+</head>
+<body>
+    <!--this is the topbar part of the page containing search box-->
+    <wrapper id="main">
+        <header id="header">
+            <section class="top">
+                <form action="" class="search">
+                    <input type="text" placeholder="Enter team name" id="team-search">
+                <input type="text" placeholder="Enter player name" id="player-search">
+                <button>Search</button>
+                </form>
+                <button id="add" onclick="show()" ></button>
+                <form action="" id="addNew" display="block">
+                    <input id="userteam" type="text" placeholder="Enter new team name" >
+                    <button type="button" value="Submit" onclick="tn()">Submit</button>
+                </form>
+    
+            </section>
+        </header>
+        
+        <!--this is space for teams grid representation in cards-->
+        <section id="teamList" class="team-grid">
+            
+            <div id="card team-a" onclick="teamPage()"><a style="text-decoration: none; color: inherit;" href="../html/team.html">KKR</a></div>
+            <!-- <div id="card team-b" onclick="teamPage()"><a style="text-decoration: none; color: inherit;" href="../html/team.html">Team B</a></div>
+            <div id="card team-c" onclick="teamPage()"><a style="text-decoration: none; color: inherit;" href="../html/team.html">Team C</a></div>
+            <div id="card team-d" onclick="teamPage()"><a style="text-decoration: none; color: inherit;" href="../html/team.html">Team D</a></div>
+            <div id="card team-e" onclick="teamPage()"><a style="text-decoration: none; color: inherit;" href="../html/team.html">Team E</a></div> -->
+        </section>
+    </wrapper>
+</body>
+</html>
